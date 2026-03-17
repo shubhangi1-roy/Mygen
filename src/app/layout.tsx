@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "AdaptX Exercise Engine",
+  description: "Generate custom workouts tailored to your fitness level and goals",
 };
 
 export default function RootLayout({

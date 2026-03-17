@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+/* Custom color scheme - Red and Black theme */
+@theme {
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-black: #000000;
+  --color-gray-800: #1f2937;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-red-400 {
+    color: #f87171;
+  }
+  .text-red-500 {
+    color: #ef4444;
+  }
+  .text-red-600 {
+    color: #dc2626;
+  }
+  .bg-red-500\/10 {
+    background-color: rgba(239, 68, 68, 0.1);
+  }
+  .bg-red-500 {
+    background-color: #ef4444;
+  }
+  .bg-red-600\/20 {
+    background-color: rgba(220, 38, 38, 0.2);
+  }
+  .bg-red-600\/30 {
+    background-color: rgba(220, 38, 38, 0.3);
+  }
+  .bg-black\/20 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .border-red-500\/30 {
+    border-color: rgba(239, 68, 68, 0.3);
+  }
+  .border-black\/30 {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(239, 68, 68, 0.3);
+  color: white;
+}
